@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./view-course.component.css']
 })
 export class ViewCourseComponent {
-
+  
   course:any=[]
 }
