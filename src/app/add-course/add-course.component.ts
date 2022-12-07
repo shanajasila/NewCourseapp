@@ -19,7 +19,7 @@ export class AddCourseComponent {
     let data={"id":this.id,"courseTitle":this.courseTitle,"description":this.description,"venue":this.venue,"duration":this.duration,"date":this.date}
     console.log(data)
     this.api.addcourse(data).subscribe(
-      (response)=>{
+      (response:any)=>{
         console.log(response)
         // if(response.status=="success"){
 
