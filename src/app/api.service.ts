@@ -10,4 +10,7 @@ export class ApiService {
   fetchcourse=()=>{
     return this.http.get("http://localhost:8080/view")
   }
+  addcourse=(dataTOsend:any)=>{
+    return this.http.post("http://localhost:8080/addcourse",dataTOsend)
+  }
 }
