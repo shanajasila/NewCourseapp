@@ -13,7 +13,7 @@
             </div>
             <div class="row mt-4 g-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <table>
+                    <table class="table text-center">
                         <thead>
                             <tr>
                                 <th>Id</th>
@@ -25,13 +25,13 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>{{i.id}}</td>
-                                <td>{{i.courseTitle}}</td>
-                                <td>{{i.description}}</td>
-                                <td>{{i.duration}}</td>
-                                <td>{{i.date}}</td>
-                                <td>{{i.venue}}</td>
+                            <tr *ngFor="let j of searchData">
+                                <td>{{j.id}}</td>
+                                <td>{{j.courseTitle}}</td>
+                                <td>{{j.description}}</td>
+                                <td>{{j.duration}}</td>
+                                <td>{{j.date}}</td>
+                                <td>{{j.venue}}</td>
                             </tr>
                         </tbody>
                     </table>
